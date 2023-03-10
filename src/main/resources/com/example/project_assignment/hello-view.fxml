@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.project_assignment.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+           prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <SplitPane prefHeight="160.0" prefWidth="200.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="257.0" prefWidth="276.0"
+                    style="-fx-background-color: #FFCC80 ;-fx-background-image: ;">
+            <AnchorPane layoutX="333.0" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="267.0">
+                <ImageView fitHeight="397.0" fitWidth="277.0" layoutX="-10.0" pickOnBounds="true" smooth="false"
+                           style="-fx-cursor: hand;">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT"/>
+                    </cursor>
+                    <Image url="@../../../../../gestion-stock-almacen-palets.jpg"/>
+                </ImageView>
+            </AnchorPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="45.0" prefHeight="55.0"
+                   prefWidth="277.0" text="Welcome To Stock Management System">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="141.0" text="Username :">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="199.0" text="Password : ">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Label>
+            <TextField layoutX="108.0" layoutY="138.0" prefHeight="25.0" prefWidth="169.0"/>
+            <TextField layoutX="108.0" layoutY="197.0" prefHeight="25.0" prefWidth="169.0"/>
+            <Button layoutX="82.0" layoutY="257.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="138.0"
+                    style="-fx-background-color: FF8A65;" text="Log In" textFill="WHITE">
+                <font>
+                    <Font name="Bell MT Bold" size="14.0"/>
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <Button layoutX="82.0" layoutY="319.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="138.0"
+                    style="-fx-background-color: FF8A65;" text=" Register " textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="12.0"/>
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+        </AnchorPane>
+    </SplitPane>
+</SplitPane>
