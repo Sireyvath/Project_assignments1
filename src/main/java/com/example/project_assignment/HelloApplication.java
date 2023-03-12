@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
@@ -21,6 +22,7 @@ public class HelloApplication extends Application {
         stage.setTitle("Stock Management");
         stage.setScene(scene);
         stage.show();
+        stage.setResizable(false);
     }
     public static class register{
 
