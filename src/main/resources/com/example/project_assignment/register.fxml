@@ -15,7 +15,7 @@
            fx:controller="com.example.project_assignment.HelloController">
    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFCC80;">
       <ImageView fitHeight="397.0" fitWidth="288.0" pickOnBounds="true">
-         <Image url="@../../../../../stockja.jpg"/>
+         <Image url="@../../../img/stockja.jpg"/>
       </ImageView>
       <Label alignment="CENTER" layoutX="305.0" layoutY="46.0" prefHeight="37.0" prefWidth="272.0"
              text="Welcome To Stock Management">
