@@ -17,38 +17,47 @@
       <ImageView fitHeight="397.0" fitWidth="288.0" pickOnBounds="true">
          <Image url="@../../../img/stockja.jpg" />
       </ImageView>
-      <Label alignment="CENTER" layoutX="305.0" layoutY="31.0" prefHeight="37.0" prefWidth="272.0" text="Welcome To Stock Management">
+      <Label alignment="CENTER" layoutX="305.0" layoutY="31.0" prefHeight="37.0" prefWidth="272.0" text="Register To Continue">
          <font>
-            <Font name="Bell MT Bold" size="18.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="321.0" layoutY="106.0" prefHeight="17.0" prefWidth="74.0" text="Username : ">
+      <Label layoutX="323.0" layoutY="106.0" prefHeight="17.0" prefWidth="74.0" text="Username : ">
          <font>
-            <Font size="13.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
          </font>
       </Label>
       <Label layoutX="321.0" layoutY="242.0" text="Password  :">
          <font>
-            <Font size="13.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
          </font>
       </Label>
       <TextField layoutX="395.0" layoutY="103.0" prefHeight="25.0" prefWidth="167.0" promptText="Username" />
-      <Button layoutX="354.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: FF8A65;" text="Register Now" textFill="#fff9f9">
+      <Button layoutX="354.0" layoutY="306.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: FF8A65;" text="Register Now" textFill="#fff9f9">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
       </Button>
       <Button layoutX="353.0" layoutY="344.0" mnemonicParsing="false" onAction="#ToLogin" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: FF8A65;" text="Have Account ? Log In" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
       </Button>
       <PasswordField layoutX="395.0" layoutY="239.0" prefHeight="25.0" prefWidth="167.0" promptText="Password" />
       <DatePicker layoutX="395.0" layoutY="149.0" prefHeight="25.0" prefWidth="167.0" promptText="11/1/2000" />
-      <Label layoutX="310.0" layoutY="153.0" text="Date Of Birth :" />
+      <Label layoutX="310.0" layoutY="153.0" text="Date Of Birth :">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Label>
       <Label layoutX="300.0" layoutY="199.0" text="Email Address : ">
          <font>
-            <Font size="13.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
          </font>
       </Label>
       <TextField layoutX="395.0" layoutY="195.0" prefHeight="25.0" prefWidth="167.0" promptText="example@gmail.com" />

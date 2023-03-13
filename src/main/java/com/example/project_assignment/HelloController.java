@@ -31,7 +31,14 @@ public class HelloController {
         stage.setScene(scene);
         stage.show();
     }
-
+    public  void ToMainScreen(ActionEvent event) throws IOException {
+        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("Main_screen.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader);
+        stage.setScene(scene);
+        stage.show();
+        stage.setResizable(true);
+    }
 
 
 }
