@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 
@@ -16,13 +15,16 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400, Color.BLUEVIOLET);
         Image icon = new Image("D:\\School\\Term4\\Pratice OOP\\Project_oop\\src\\main\\resources\\img\\5164023.png");
-
+       // String css = this.getClass().getResource("style.css").toExternalForm();
+      //  scene.getStylesheets().add(css);
 
         stage.getIcons().add(icon);
         stage.setTitle("Stock Management");
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
+
+
     }
     public static class register{
 

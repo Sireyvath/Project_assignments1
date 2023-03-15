@@ -33,7 +33,7 @@
          </font>
       </Label>
       <TextField layoutX="395.0" layoutY="103.0" prefHeight="25.0" prefWidth="167.0" promptText="Username" />
-      <Button layoutX="354.0" layoutY="306.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: FF8A65;" text="Register Now" textFill="#fff9f9">
+      <Button fx:id="goRegister" layoutX="354.0" layoutY="306.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: FF8A65;" text="Register Now" textFill="#fff9f9">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -41,7 +41,7 @@
             <Font name="Berlin Sans FB Demi Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="353.0" layoutY="344.0" mnemonicParsing="false" onAction="#ToLogin" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: FF8A65;" text="Have Account ? Log In" textFill="WHITE">
+      <Button fx:id="loginButton" layoutX="353.0" layoutY="344.0" mnemonicParsing="false" onAction="#ToLogin" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: FF8A65;" text="Have Account ? Log In" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
