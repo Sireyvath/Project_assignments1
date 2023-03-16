@@ -24,7 +24,7 @@
                         <Image url="@../../../img/delete.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="57.0" layoutY="253.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Exit" textFill="RED">
+                  <Button layoutX="57.0" layoutY="253.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Exit" textFill="#2b00ff">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -46,7 +46,7 @@
                      <font>
                         <Font size="14.0" />
                      </font></Text>
-                  <Button layoutX="159.0" layoutY="169.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: pink;" text="Delete" textFill="RED">
+                  <Button layoutX="159.0" layoutY="169.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: pink;" text="Delete" textFill="#4800ff">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
