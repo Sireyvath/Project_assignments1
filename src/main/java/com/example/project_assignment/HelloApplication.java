@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
 
 //        Parent parent = (Parent) load(getClass().getResource("hello-view.fxml"));
 //        Scene scene = new Scene(parent);
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("register.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400, Color.BLUEVIOLET);
         //Image icon = new Image("img/5164023.png");
 

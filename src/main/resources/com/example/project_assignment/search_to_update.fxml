@@ -3,9 +3,6 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -16,32 +13,6 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_assignment.HelloController">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="600.0">
-         <top>
-            <MenuBar BorderPane.alignment="CENTER">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-                  <Menu mnemonicParsing="false" text="Tools">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Close" />
-                     </items>
-                  </Menu>
-              </menus>
-            </MenuBar>
-         </top>
          <right>
             <ImageView fitHeight="294.0" fitWidth="364.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                <image>
@@ -67,11 +38,11 @@
                         <Font name="Berlin Sans FB" size="16.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="101.0" layoutY="76.0" prefHeight="25.0" prefWidth="150.0">
+                  <TextField fx:id="nameField" layoutX="101.0" layoutY="76.0" prefHeight="25.0" prefWidth="150.0">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor></TextField>
-                  <TextField layoutX="100.0" layoutY="112.0" prefHeight="25.0" prefWidth="151.0">
+                  <TextField fx:id="idField" layoutX="100.0" layoutY="112.0" prefHeight="25.0" prefWidth="151.0">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor></TextField>
@@ -119,22 +90,22 @@
                         <Font name="Berlin Sans FB" size="17.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="100.0" layoutY="144.0" prefHeight="25.0" prefWidth="151.0">
+                  <TextField fx:id="qtyField" layoutX="100.0" layoutY="144.0" prefHeight="25.0" prefWidth="151.0">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </TextField>
-                  <TextField layoutX="100.0" layoutY="174.0" prefHeight="25.0" prefWidth="151.0">
+                  <TextField fx:id="priceField" layoutX="100.0" layoutY="174.0" prefHeight="25.0" prefWidth="151.0">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </TextField>
-                  <TextField layoutX="100.0" layoutY="208.0" prefHeight="25.0" prefWidth="151.0">
+                  <TextField fx:id="priceAtFullField" layoutX="100.0" layoutY="208.0" prefHeight="25.0" prefWidth="151.0">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </TextField>
-                  <TextField layoutX="100.0" layoutY="243.0" prefHeight="25.0" prefWidth="151.0">
+                  <TextField fx:id="inDateField" layoutX="100.0" layoutY="243.0" prefHeight="25.0" prefWidth="151.0">
                      <cursor>
                         <Cursor fx:constant="TEXT" />
                      </cursor>

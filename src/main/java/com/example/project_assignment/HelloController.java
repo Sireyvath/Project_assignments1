@@ -103,7 +103,19 @@ public class HelloController implements Initializable{
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
-        stage.show();
+        stage.show();}
+        public  void ToAddStock(ActionEvent event) throws IOException{
+            Parent fxmlLoader =  load(getClass().getResource("ToAddStock.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(fxmlLoader);
+            stage.setScene(scene);
+            stage.show();}
+            public  void ToDelete(ActionEvent event) throws IOException{
+                Parent fxmlLoader =  load(getClass().getResource("delete.fxml"));
+                stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+                scene = new Scene(fxmlLoader);
+                stage.setScene(scene);
+                stage.show();
     }
     public  void ToMainScreen(ActionEvent event) throws IOException {
         Parent fxmlLoader = load(getClass().getResource("Main_screen.fxml"));
@@ -155,7 +167,7 @@ public class HelloController implements Initializable{
 
     @FXML
     private void updateButton() {
-        String query = "UPDATE stocks SET name= "+nameField.getText()+", quantity= "+qtyField.getText()+",price="+priceField.getText()+",price_at_full="+priceAtFullField.getText()+",in_date="+inDateField.getText()+" WHERE ID="+idField.getText()+";";
+        String query = "UPDATE stocks SET name=' "+nameField.getText()+" ', quantity='"+qtyField.getText()+"',price='"+priceField.getText()+"', price_at_full='"+priceAtFullField.getText()+"',in_date='"+inDateField.getText()+"'WHERE ID="+idField.getText()+";";
         executeQuery(query);
         showStocks();
     }
@@ -226,8 +238,8 @@ public class HelloController implements Initializable{
     public void showStocks() {
         ObservableList<stocks> list = getBooksList();
 
-        idColumn.setCellValueFactory(new PropertyValueFactory<stocks,Integer>("Id"));
-        nameColumn.setCellValueFactory(new PropertyValueFactory<stocks,String>("Name"));
+        idColumn.setCellValueFactory(new PropertyValueFactory<stocks,Integer>("id"));
+        nameColumn.setCellValueFactory(new PropertyValueFactory<stocks,String>("name"));
         qtyColumn.setCellValueFactory(new PropertyValueFactory<stocks,Integer>("qty"));
         priceColumn.setCellValueFactory(new PropertyValueFactory<stocks,Integer>("price"));
         pirceAtFullColumn.setCellValueFactory(new PropertyValueFactory<stocks,Integer>("priceAtFull"));

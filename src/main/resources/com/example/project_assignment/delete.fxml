@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_assignment.HelloController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_assignment.HelloController">
    <children>
       <SplitPane dividerPositions="0.29797979797979796" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
         <items>
@@ -14,7 +19,7 @@
                <children>
                   <Label layoutX="13.0" layoutY="21.0" text="Delete Stock data">
                      <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -24,34 +29,39 @@
                         <Image url="@../../../img/delete.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="57.0" layoutY="253.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Exit" textFill="#2b00ff">
+                  <Button layoutX="57.0" layoutY="305.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Exit" textFill="RED">
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="57.0" layoutY="259.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Back" textFill="RED">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font>
                   </Button>
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="416.0" style="-fx-background-color: #FAD7A0;">
                <children>
-                  <Text layoutX="70.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                  <Text layoutX="82.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
                      <font>
-                        <Font size="14.0" />
+                        <Font name="Berlin Sans FB" size="14.0" />
                      </font></Text>
-                  <Text layoutX="65.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-effect: front;" text="Please Enter  product information">
+                  <Text layoutX="33.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-effect: front;" text="Please Enter  product information">
                      <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="23.0" />
                      </font></Text>
-                  <TextField layoutX="133.0" layoutY="80.0" />
-                  <TextField layoutX="133.0" layoutY="121.0" />
-                  <Text layoutX="67.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                  <TextField fx:id="idField" layoutX="141.0" layoutY="112.0" />
+                  <TextField fx:id="nameField" layoutX="141.0" layoutY="165.0" />
+                  <Text layoutX="76.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
                      <font>
-                        <Font size="14.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font></Text>
-                  <Button layoutX="159.0" layoutY="169.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: pink;" text="Delete" textFill="#4800ff">
+                  <Button layoutX="178.0" layoutY="315.0" mnemonicParsing="false" onAction="#deleteButton" style="-fx-background-color: pink;" text="Delete" textFill="RED">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
                      </font></Button>
                </children></AnchorPane>
         </items>
