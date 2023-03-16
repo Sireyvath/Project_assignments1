@@ -111,7 +111,14 @@ public class HelloController implements Initializable{
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
-        stage.setResizable(true);
+        stage.setResizable(true);}
+        public  void toCreate(ActionEvent event) throws IOException {
+            Parent fxmlLoader = load(getClass().getResource("ToAddStock.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(fxmlLoader);
+            stage.setScene(scene);
+            stage.show();
+            stage.setResizable(true);
     }
 
 
@@ -184,7 +191,7 @@ public class HelloController implements Initializable{
     public Connection getConnection() {
         Connection con;
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/stock_manangement","root","SIrey123@");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/stock_manangement","root","066255");
             return con;
         }
         catch (Exception e){

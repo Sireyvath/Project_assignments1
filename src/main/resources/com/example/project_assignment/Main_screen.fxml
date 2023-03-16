@@ -13,7 +13,7 @@
    <left>
       <AnchorPane prefHeight="415.0" prefWidth="176.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="20.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Create Stock Data" textFill="WHITE">
+            <Button layoutX="20.0" layoutY="38.0" mnemonicParsing="false" onAction="#toCreate" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Create Stock Data" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                </font>
@@ -21,7 +21,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="DD" layoutX="20.0" layoutY="102.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Dashboard Data" textFill="WHITE">
+            <Button fx:id="DD" layoutX="20.0" layoutY="102.0" mnemonicParsing="false" onAction="#toCreate" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Dashboard Data" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="12.0" />
                </font>
