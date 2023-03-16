@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_assignment.HelloApplication">
+    <top>
+        <HBox prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="BASELINE_LEFT" contentDisplay="TOP" prefHeight="60.0" prefWidth="149.0" text="   Stock of Product" textFill="#1034e6">
+                    <font>
+                        <Font name="Brush Script MT Italic" size="20.0" />
+                    </font>
+                </Label>
+                <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="44.0" />
+                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="290.0">
+                    <children>
+                        <TextField prefHeight="35.0" prefWidth="253.0" promptText="Search" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Pictures/image_2023-03-13_14-28-45.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <TableView fx:id="SearchTextField" fixedCellSize="1020.0" prefHeight="502.0" prefWidth="1020.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="IDTableView" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="NameTableColum" prefWidth="181.33334350585938" text="Name" />
+                <TableColumn fx:id="BrandTableColumn" prefWidth="208.66668701171875" text="Brand" />
+                <TableColumn fx:id="DateTableColumn" prefWidth="188.66671752929688" text="Date" />
+                <TableColumn fx:id="TotalTableColumn" prefWidth="171.99996948242188" text="Total" />
+                <TableColumn fx:id="RemainTableColumn" prefWidth="192.0" text="Remain" />
+            </columns>
+        </TableView>
+    </left>
+</BorderPane>
