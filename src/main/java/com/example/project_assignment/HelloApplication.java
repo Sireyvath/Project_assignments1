@@ -14,7 +14,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400, Color.BLUEVIOLET);
-        Image icon = new Image("D:\\School\\Term4\\Pratice OOP\\Project_oop\\src\\main\\resources\\img\\5164023.png");
+        Image icon = new Image("C:\\Users\\sokli\\OneDrive\\Desktop\\OOP_project\\src\\main\\resources\\img\\5164023.png");
        // String css = this.getClass().getResource("style.css").toExternalForm();
       //  scene.getStylesheets().add(css);
 

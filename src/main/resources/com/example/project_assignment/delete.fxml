@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DeletePart">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="184.0" style="-fx-background-color: #E8DAEF;">
+               <children>
+                  <Label layoutX="13.0" layoutY="21.0" text="Delete Stock data">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <ImageView fitHeight="121.0" fitWidth="133.0" layoutX="27.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="57.0" layoutY="231.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Delete" textFill="RED">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button layoutX="57.0" layoutY="280.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Exit" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="416.0" style="-fx-background-color: #FAD7A0;">
+               <children>
+                  <Text layoutX="70.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="65.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-effect: front;" text="Please Enter  product information">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Text>
+                  <Text layoutX="66.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="65.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <TextField layoutX="133.0" layoutY="80.0" />
+                  <TextField layoutX="133.0" layoutY="121.0" />
+                  <TextField layoutX="133.0" layoutY="205.0" />
+                  <TextField layoutX="133.0" layoutY="249.0" />
+                  <TextField layoutX="133.0" layoutY="292.0" />
+                  <Text layoutX="67.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="65.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="66.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remain">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
