@@ -148,16 +148,16 @@ public class HelloController implements Initializable{
 
     @FXML
     private void updateButton() {
-        String query = "UPDATE stocks SET name='"+nameField.getText()+"',quanity='"+qtyField.getText()+"',price="+priceField.getText()+",Price At Full="+priceAtFullField.getText()+",In Date="+inDateField.getText()+" WHERE ID="+idField.getText()+"";
+        String query = "UPDATE stocks SET name= "+nameField.getText()+", quantity= "+qtyField.getText()+",price="+priceField.getText()+",price_at_full="+priceAtFullField.getText()+",in_date="+inDateField.getText()+" WHERE ID="+idField.getText()+";";
         executeQuery(query);
         showStocks();
     }
-    @FXML
-    private void updateButton1() {
-        String query = "UPDATE stocks SET name='"+nameField.getText()+"',quanity='"+qtyField.getText()+"',price="+priceField.getText()+",Price At Full="+priceAtFullField.getText()+",In Date="+inDateField.getText()+" WHERE ID="+idField.getText()+"";
-        executeQuery(query);
-        showStocks();
-    }
+//    @FXML
+//    private void updateButton1() {
+//        String query = "UPDATE stocks SET name='"+nameField.getText()+"',quanity='"+qtyField.getText()+"',price="+priceField.getText()+",Price At Full="+priceAtFullField.getText()+",In Date="+inDateField.getText()+" WHERE ID="+idField.getText()+"";
+//        executeQuery(query);
+//        showStocks();
+//    }
 
     @FXML
     private void deleteButton() {

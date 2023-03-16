@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_assignment.HelloController">
+   <left>
+      <AnchorPane prefHeight="415.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="20.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Create Stock Data" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="DD" layoutX="20.0" layoutY="102.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Dashboard Data" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="20.0" layoutY="166.0" mnemonicParsing="false" onAction="#searchUpdate" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Update Stock Data" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="20.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Delete Stock Data" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="20.0" layoutY="297.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: FB8C00;" text="Exit Window" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ImageView fitHeight="376.0" fitWidth="517.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../img/inventory-or-logistics-optimization-concept-with-modern-isometric-free-vector-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </center>
+   <top>
+      <Label alignment="CENTER" prefHeight="71.0" prefWidth="985.0" style="-fx-background-color: FB8C00;" text="Welcome To Stock Management System" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
