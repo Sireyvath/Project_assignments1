@@ -21,7 +21,7 @@ public class HelloApplication extends Application {
 //        Scene scene = new Scene(parent);
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400, Color.BLUEVIOLET);
-        Image icon = new Image("D:\\School\\Term4\\Pratice OOP\\Project_oop\\src\\main\\resources\\img\\5164023.png");
+        Image icon = new Image("C:\\Users\\sokli\\OneDrive\\Desktop\\OOP_stock\\src\\main\\resources\\img\\5164023.png");
 
 
         stage.getIcons().add(icon);
