@@ -38,7 +38,6 @@ public class HelloController implements Initializable{
     @FXML
     private Button DD;
 
-
     @FXML
     private Button loginButton,goRegister,exitButton;
     @FXML
@@ -112,7 +111,14 @@ public class HelloController implements Initializable{
         scene = new Scene(fxmlLoader);
         stage.setScene(scene);
         stage.show();
-        stage.setResizable(true);
+        stage.setResizable(true);}
+        public  void toCreate(ActionEvent event) throws IOException {
+            Parent fxmlLoader = load(getClass().getResource("ToAddStock.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(fxmlLoader);
+            stage.setScene(scene);
+            stage.show();
+            stage.setResizable(true);
     }
 
 
@@ -123,7 +129,7 @@ public class HelloController implements Initializable{
         stage.setScene(scene);
         stage.show();
         stage.setResizable(true);}
-
+    
 //    public  void backButton(ActionEvent event) throws IOException {
 //        Parent fxmlLoader = load(getClass().getResource("Main_screen"));
 //        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -139,17 +145,6 @@ public class HelloController implements Initializable{
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();}
-
-
-     public void ToDelete(ActionEvent event) throws IOException {
-         Parent fxmlLoader = load(getClass().getResource("delete.fxml"));
-         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-         scene = new Scene(fxmlLoader);
-         stage.setScene(scene);
-         stage.show();
-         stage.setResizable(true);}
-
-
     @FXML
     private void insertButton() {
         String query = "insert into stocks values("+idField.getText()+",'"+nameField.getText()+"','"+qtyField.getText()+"','"+priceField.getText()+"','"+priceAtFullField.getText()+"','"+inDateField.getText()+"'); ";
@@ -196,7 +191,7 @@ public class HelloController implements Initializable{
     public Connection getConnection() {
         Connection con;
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/stock_manangement","root","1206");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/stock_manangement","root","066255");
             return con;
         }
         catch (Exception e){
