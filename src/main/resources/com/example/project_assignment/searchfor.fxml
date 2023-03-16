@@ -23,7 +23,7 @@
                 <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="44.0" />
                 <HBox alignment="CENTER" prefHeight="35.0" prefWidth="290.0">
                     <children>
-                        <TextField prefHeight="35.0" prefWidth="253.0" promptText="Search" />
+                        <TextField fx:id="search" prefHeight="35.0" prefWidth="253.0" promptText="Search" />
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../Pictures/image_2023-03-13_14-28-45.png" />
