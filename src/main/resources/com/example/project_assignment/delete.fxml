@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DeletePart">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_assignment.HelloController">
    <children>
       <SplitPane dividerPositions="0.29797979797979796" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
         <items>
@@ -29,7 +24,7 @@
                         <Image url="@../../../img/delete.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="57.0" layoutY="253.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Exit" textFill="RED">
+                  <Button layoutX="57.0" layoutY="253.0" mnemonicParsing="false" onAction="#ToMainScreen" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Exit" textFill="RED">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -51,7 +46,7 @@
                      <font>
                         <Font size="14.0" />
                      </font></Text>
-                  <Button layoutX="177.0" layoutY="169.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Delete" textFill="RED">
+                  <Button layoutX="159.0" layoutY="169.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: pink;" text="Delete" textFill="RED">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
